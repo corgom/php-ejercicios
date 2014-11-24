@@ -30,11 +30,15 @@ include("../inc/config.php");
     <ol class="normal">
         <li>El usuario captura el tamaño del borde en el campo
         del formulario de ésta página.
-        <li>La página destino debe recibir el dato usando GET, y hay que generar una tabla con el tamaño de borde
-        especificado.
+        <li>La página destino debe recibir el dato usando POST.
+        <li>En la página destino generar una tabla con el tamaño de borde de la siguiente manera:
+            <ol>
+                <li>Si el tamaño de borde capturado por el usuario es mayor a 10, poner el borde = 10.
+                <li>Si el tamaño de borde capturado es menor a 0, poner el borde = 3.
+            </ol>
     </ol>
     
-    <form action="recibe.php" method="GET">
+    <form action="recibe.php" method="POST">
         <label>Tamaño borde:</label>
             <input type="text" name="borde_tamano" />
         <br />

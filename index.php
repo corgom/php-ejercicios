@@ -2,7 +2,6 @@
 
 include("inc/config.php");
 
-$cantidad_ejercicios = 10;
 
 ?>
 <!DOCTYPE html>
@@ -23,10 +22,11 @@ $cantidad_ejercicios = 10;
     <h1>Índice de ejercicios:</h1>
     <ul>
 <?php
-        for($i = 0; $i < $cantidad_ejercicios; $i++)
+        for($i = 0; $i < count($ejercicios_basicos); $i++)
         {
 ?>
-        <li><a href="ejercicio-<?php echo $i+1 ?>/envia.php">Ejercicio <?php echo $i+1 ?></a>
+        <li><a href="ejercicio-<?php echo $i+1 ?>/envia.php">Ejercicio <?php echo $i+1 ?></a>:
+            <br /><?php echo($ejercicios_basicos[$i]) ?>
 <?php
         }
 ?>

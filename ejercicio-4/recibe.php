@@ -23,12 +23,10 @@ include("../inc/config.php");
     <h1>Recibe datos</h1>
 
     <h2>Resultado del ejercicio:</h2>
+
+
     
-    <table border="0">
-        <tr>
-            <td>CELDA</td>
-        </tr>
-    </table>
+
 </body>
 
 </html>

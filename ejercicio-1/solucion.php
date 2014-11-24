@@ -16,15 +16,18 @@ include("../inc/config.php");
 
 <body>
     <span class="arrow">&#8592;</span>
-    <a href="<?php echo $ruta_pagina_indice_relativa_a_ejercicios . $pagina_indice ?>"> Regresar a índice de ejercicios</a><br />
-    <a href="<?php echo $pagina_solucion ?>"> Ver ejemplo de salida o solución</a>
+    <a href="envia.php"> Regresar al ejercicio</a>
 
-
-    <h1>Recibe datos</h1>
+    <h1>Ejemplo solución</h1>
 
     <h2>Resultado del ejercicio:</h2>
     
-    <table border="0">
+    <ul>
+    <li>1. En la parte final de la direccion web de la pagina que recibe el dato debe verse como:<br />
+    recibe.php?borde_tamano=15
+    <li>2. Y la tabla con borde igual a 15:
+    </ul>
+    <table border="15">
         <tr>
             <td>CELDA</td>
         </tr>

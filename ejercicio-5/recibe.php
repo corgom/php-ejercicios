@@ -2,6 +2,9 @@
 
 include("../inc/config.php");
 
+$dividendo = $_POST["dividendo"];
+$divisor = $_POST["divisor"]
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,12 +26,16 @@ include("../inc/config.php");
     <h1>Recibe datos</h1>
 
     <h2>Resultado del ejercicio:</h2>
+
+    <p>Los numeros capturados son:
+        <?php echo $dividendo+ ?> y <?php echo $divisor?>
     
-    <table border="0">
-        <tr>
-            <td>CELDA</td>
-        </tr>
-    </table>
+    <p>El resultado de la división
+        <?php echo $dividendo?>/<?php echo $divisor?> es igual a <?php echo $dividendo / $divisor ?>
+
+
+    
+
 </body>
 
 </html>

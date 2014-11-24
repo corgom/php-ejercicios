@@ -30,7 +30,7 @@ include("../inc/config.php");
     <ol class="normal">
         <li>El usuario captura el tamaño del borde en el campo
         del formulario de ésta página.
-        <li>La página destino debe recibir el dato usando GET, y hay que generar una tabla con el tamaño de borde
+        <li>La página destino debe recibir el dato usando POST, y hay que generar una tabla con el tamaño de borde
         especificado.
     </ol>
     

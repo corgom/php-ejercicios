@@ -16,15 +16,16 @@ include("../inc/config.php");
 
 <body>
     <span class="arrow">&#8592;</span>
-    <a href="<?php echo $ruta_pagina_indice_relativa_a_ejercicios . $pagina_indice ?>"> Regresar a índice de ejercicios</a><br />
-    <a href="<?php echo $pagina_solucion ?>"> Ver ejemplo de salida o solución</a>
+    <a href="envia.php"> Regresar al ejercicio</a>
 
-
-    <h1>Recibe datos</h1>
+    <h1>Ejemplo solución</h1>
 
     <h2>Resultado del ejercicio:</h2>
     
-    <table border="0">
+    <ol>
+        <li>Ejemplo de que el usuario capturó tamaño de borde = 30 (como capturó 30 se pone borde=10):
+    </ol>
+    <table border="10">
         <tr>
             <td>CELDA</td>
         </tr>

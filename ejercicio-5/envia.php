@@ -28,15 +28,22 @@ include("../inc/config.php");
     <h2>Explicación del ejercicio:</h2>
     
     <ol class="normal">
-        <li>El usuario captura el tamaño del borde en el campo
-        del formulario de ésta página.
-        <li>La página destino debe recibir el dato usando GET, y hay que generar una tabla con el tamaño de borde
-        especificado.
+        <li>El usuario captura los dos siguientes numeros (100 y 0).
+        <li>En la página destino se intenta realizar la operación de división de los números.
+        <li>La página destino arroja errores, por tanto tienes que:
+            <ul>
+                <li>Averiguar en que consisten los errores
+                <li>Corregir los error
+            </ul>
     </ol>
     
-    <form action="recibe.php" method="GET">
-        <label>Tamaño borde:</label>
-            <input type="text" name="borde_tamano" />
+    <form action="recibe.php" method="POST">
+        <label>Dividendo:</label>
+            <input type="text" name="dividendo" value="100" />
+        <br />
+        <label>Divisor:</label>
+            <input type="text" name="divisor" value="0" />
+
         <br />
         <input type="submit" value="Enviar" />
     </form>
